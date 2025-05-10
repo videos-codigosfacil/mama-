@@ -1,0 +1,145 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #001f3f;
+}
+
+.sky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #001f3d, #000c1a);
+  z-index: 0;
+}
+
+.moon {
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
+  z-index: 1;
+}
+
+.rain {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#starsCanvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.card {
+  position: relative;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #c2185b;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hidden {
+  display: none;
+}
+
+#surprise {
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+#surprise img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+#mensajeEspecial {
+  animation: fadeIn 1s ease-in;
+  white-space: pre-line;
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #333;
+}
+
+#letraCancion {
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #f8f8f8;
+  text-align: left;
+  padding: 20px;
+  border-left: 3px solid #e91e63;
+  white-space: pre-wrap;
+  min-height: 80px;
+  background: rgba(0, 0, 0, 0.6);
+  animation: fadeIn 2s ease-in-out;
+}
+.karaoke-text {
+  font-size: 1.2em;
+  color: #fff;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-left: 4px solid #e91e63;
+  white-space: pre-wrap;
+  min-height: 100px;
+  transition: all 0.5s ease-in-out;
+}
+.hidden {
+  display: none;
+}
+
+.karaoke-line {
+  font-size: 1.8rem;
+  color: #ff69b4;
+  text-align: center;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}

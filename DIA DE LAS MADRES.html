@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Día de la Madre</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="sky">
+    <div class="moon"></div>
+    <canvas id="starsCanvas"></canvas>
+    <div id="rain" class="rain"></div>
+  </div>
+
+  <div class="card" id="card">
+    <h1>🌷 Feliz Día de la Madre 🌷</h1>
+    <p class="message">Eres la mejor mamá del mundo. ¡Gracias por todo tu amor! 💖</p>
+
+    <button id="btnSorpresa">Ver Sorpresa 🎁</button>
+    <button id="btnMensaje">Leer Mensaje Especial 💌</button>
+    <button id="btnLetra">Ver Letra de la Canción 🎶</button>
+
+    <div id="surprise" class="hidden">
+      <img src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif" alt="flores para mamá">
+      <p>Te mereces todas las flores del mundo 🌸🌼🌹</p>
+    </div>
+
+    <div id="mensajeEspecial" class="hidden"></div>
+    <div id="letraCancion" class="hidden"></div>
+  </div>
+
+  
+
+  <script src="script.js"></script>
+ <audio id="bgAudio" preload="auto" loop>
+  <source src="Colde(콜드) - Star (이번 생도 잘 부탁해 OST) See You in My 19th Life OST Part 2.mp3" type="audio/mp3"> <!-- Audio de fondo -->
+  Tu navegador no soporta la reproducción de audio.
+</audio>
+
+<div id="letraKaraoke" class="karaoke-line"></div>
+
+<audio id="coldeAudio" preload="auto">
+  <source src="Colde(콜드) - Star (이번 생도 잘 부탁해 OST) See You in My 19th Life OST Part 2.mp3" type="audio/mp3">
+</audio>
+
+<audio id="coldeAudio">
+  <source src="Colde(콜드) - Star (이번 생도 잘 부탁해 OST) See You in My 19th Life OST Part 2.mp3" type="audio/mp3">
+</audio>
+
+<audio id="coldeAudio" src="Colde(콜드) - Star (이번 생도 잘 부탁해 OST) See You in My 19th Life OST Part 2.mp3"></audio>
+
+</body>
+</html>
