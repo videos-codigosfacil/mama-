@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       isMessageVisible = false;
       isTyping = false;
     } else {
-      const mensaje = `Querida Mamá:\n\nGracias por tu amor infinito,\npor cada abrazo, cada palabra, cada sacrificio.\nEres el corazón de esta familia.\n\n¡Te amo con todo mi corazón! 💖`;
+      const mensaje = `Querida Mamá:\n\nGracias por tu amor infinito,\npor cada abrazo, cada palabra, cada sacrificio.\nEres el corazón de esta familia.\n\n¡Te quiero con todo mi corazón! 💖`;
       mensajeDiv.textContent = "";
       mensajeDiv.classList.remove("hidden");
       mensajeBtn.textContent = "Cerrar Mensaje 💌";
